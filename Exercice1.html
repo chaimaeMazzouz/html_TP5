@@ -7,7 +7,7 @@
     <form>
       <fieldset style="width: 600px">
         <h1>Les formulaire HTML</h1>
-
+        <!--Conteneur "informations personnelles"-->
         <div
           style="
             background-color: #cbdc7c;
@@ -18,22 +18,24 @@
           <span>
             <b>INFORMATIONS PERSONNELLES : </b>
           </span>
+
           <table cellspacing="30px">
             <tr>
               <td>Entrer Votre prénom :</td>
-              <td><input type="text" size="40px" /></td>
+              <td><input type="text" name="prenom" size="40px" /></td>
             </tr>
             <tr>
               <td>Entrer Votre nom :</td>
-              <td><input type="text" size="40px" /></td>
+              <td><input type="text" name="nom" size="40px" /></td>
             </tr>
             <tr>
               <td>Choisissez un pseudo :</td>
-              <td><input type="text" size="40px" /></td>
+              <td><input type="text" name="pseudo" size="40px" /></td>
             </tr>
           </table>
         </div>
         <br /><br />
+        <!--Conteneur "les informations supplementaires"-->
         <div
           style="
             background-color: #7ccbdc;
@@ -42,9 +44,11 @@
           "
         >
           <span><b>INFORMATIONS SUPPLEMENTAIRES : </b></span>
-          <table cellspacing="20px">
-            <br />
-            <p>Hobbies</p>
+          <br /><br />
+          <table cellspacing="5px">
+            <tr>
+              Hobbies
+            </tr>
             <tr>
               <td><input type="checkbox" /> Informatique</td>
               <td><input type="checkbox" /> Sport</td>
@@ -54,21 +58,19 @@
           </table>
         </div>
         <br /><br />
-        <div style="width: 600px">
-          <input
-            type="submit"
-            value="ENVOYER"
-            size="80"
-            style="
-              background-color: #fe6921;
-              color: #fff0fa;
-              padding: 10px 10px;
-              border-radius: 8px;
-              font-size: 16px;
-              float: right;
-            "
-          />
-        </div>
+
+        <input
+          type="submit"
+          value="ENVOYER"
+          style="
+            background-color: #fe6921;
+            color: #fff0fa;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 16px;
+            float: right;
+          "
+        />
       </fieldset>
     </form>
   </body>
